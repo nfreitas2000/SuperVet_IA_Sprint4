@@ -4,7 +4,6 @@
 
 O **SuperVet** é uma plataforma para tutores e clínicas veterinárias que centraliza pets, tutores, veterinários, agenda, notificações, prontuários, prescrições e dados de uma coleira IoT (batimentos e localização). Este repositório contém o **componente de IA** da plataforma: ele transforma dados que hoje ficam parados no banco em **prioridades, recomendações e resumos em linguagem natural**, em uma aplicação completa que roda dentro de um único notebook do Google Colab.
 
-![Abrir no Colab](https://colab.research.google.com/drive/10RBMSn0LWpMzVNsOaPs_X1OVAZIM-jfO?usp=sharing)
 ## Integrantes
 
 | Nome | RM |
