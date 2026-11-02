@@ -4,8 +4,7 @@
 
 O **SuperVet** é uma plataforma para tutores e clínicas veterinárias que centraliza pets, tutores, veterinários, agenda, notificações, prontuários, prescrições e dados de uma coleira IoT (batimentos e localização). Este repositório contém o **componente de IA** da plataforma: ele transforma dados que hoje ficam parados no banco em **prioridades, recomendações e resumos em linguagem natural**, em uma aplicação completa que roda dentro de um único notebook do Google Colab.
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nfreitas2000/SuperVet_IA_Sprint4/blob/main/SuperVet_IA_App_Colab.ipynb)
-
+![Abrir no Colab](https://colab.research.google.com/drive/10RBMSn0LWpMzVNsOaPs_X1OVAZIM-jfO?usp=sharing)
 ## Integrantes
 
 | Nome | RM |
@@ -229,22 +228,6 @@ A seção 6 do notebook mede, para cada pet: o score obtido contra o esperado, a
 - O app roda no Colab (ambiente temporário, o link público muda a cada execução). Em produção, seria hospedado em servidor próprio.
 - A checagem de fidelidade do texto do LLM é apenas um **indicador** medido na seção 6; ela não bloqueia respostas em tempo de uso. A proteção principal continua sendo o prompt restritivo.
 - A retroalimentação do tutor ("Já agendei") informa a clínica, mas **ainda não altera o cálculo do score**.
-
-## 11. Status e roadmap
-
-| Item | Status |
-|---|---|
-| Motor de regras e score de prioridade | ✅ Implementado e testado |
-| Notificação personalizada, resumo pré-consulta e chat | ✅ Implementado |
-| Guarda de emergência e fallback | ✅ Implementado e testado |
-| Interface integrada ao banco e ao LLM (Gradio + SQLite + Ollama) | ✅ Implementado |
-| Recomendação de serviços (seção 3.3 do Sprint 3) | ✅ Implementado (regras de referência) |
-| Retroalimentação do tutor | ✅ Implementada (visível à clínica; sem efeito no score) |
-| Consentimento LGPD com opção de desativar a IA | ✅ Implementado e testado |
-| Integração com o backend Java + Oracle do Sprint 3 | ⏳ Fora do escopo desta entrega |
-| Tabela de protocolos vacinais por espécie e idade | ⏳ Fase 2 |
-| Retroalimentação influenciando o score | ⏳ Fase 2 |
-| Modelo preditivo de anomalia em BPM e recomendação colaborativa | ⏳ Fase 3 |
 
 ## Aviso
 
