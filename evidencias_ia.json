@@ -1,111 +1,103 @@
 {
-  "gerado_em": "2026-11-02T21:38:44",
+  "gerado_em": "2026-11-02T22:24:00",
   "modelo": "qwen2.5:7b",
-  "fila_clinica": [
+  "avaliacao": [
     {
-      "id_pet": 4,
-      "pet": "Rex",
-      "score": 80,
-      "nivel": "CRITICO",
-      "principais_motivos": [
-        "5 leitura(s) de batimento fora da faixa de referência (60–100 bpm) nas últimas 24h, com valores entre 116 e 123 bpm.",
-        "A coleira emitiu 2 alerta(s) nas últimas 24h (tipo: taquicardia)."
-      ]
-    },
-    {
-      "id_pet": 3,
-      "pet": "Luna",
-      "score": 55,
-      "nivel": "ALTO",
-      "principais_motivos": [
-        "O peso caiu 12.5% entre os dois últimos prontuários (4.8 kg → 4.2 kg).",
-        "O retorno previsto para 23/10/2026 está atrasado há 10 dias."
-      ]
-    },
-    {
-      "id_pet": 2,
-      "pet": "Mel",
-      "score": 45,
-      "nivel": "MEDIO",
-      "principais_motivos": [
-        "O retorno previsto para 13/10/2026 está atrasado há 20 dias.",
-        "A última vacinação foi em 08/09/2025 (há 420 dias), acima do intervalo de referência de 365 dias."
-      ]
-    },
-    {
-      "id_pet": 1,
       "pet": "Thor",
       "score": 0,
       "nivel": "BAIXO",
-      "principais_motivos": []
+      "esperado": "BAIXO (0)",
+      "bate_com_esperado": true,
+      "texto_gerado_por": "llm",
+      "latencia_s": 0.98,
+      "numeros_fora_dos_dados": []
+    },
+    {
+      "pet": "Mel",
+      "score": 45,
+      "nivel": "MEDIO",
+      "esperado": "MEDIO (45)",
+      "bate_com_esperado": true,
+      "texto_gerado_por": "llm",
+      "latencia_s": 1.93,
+      "numeros_fora_dos_dados": []
+    },
+    {
+      "pet": "Luna",
+      "score": 55,
+      "nivel": "ALTO",
+      "esperado": "ALTO (55)",
+      "bate_com_esperado": true,
+      "texto_gerado_por": "llm",
+      "latencia_s": 1.5,
+      "numeros_fora_dos_dados": []
+    },
+    {
+      "pet": "Rex",
+      "score": 80,
+      "nivel": "CRITICO",
+      "esperado": "CRITICO (80)",
+      "bate_com_esperado": true,
+      "texto_gerado_por": "llm",
+      "latencia_s": 2.04,
+      "numeros_fora_dos_dados": []
     }
   ],
-  "analise_tutor_rex": {
-    "id_pet": 4,
-    "nome_pet": "Rex",
-    "score": 80,
-    "nivel": "CRITICO",
-    "motivos": [
-      {
-        "codigo": "BPM_PERSISTENTE",
-        "pontos": 25,
-        "motivo": "5 leitura(s) de batimento fora da faixa de referência (60–100 bpm) nas últimas 24h, com valores entre 116 e 123 bpm."
-      },
-      {
-        "codigo": "ALERTA_COLEIRA",
-        "pontos": 20,
-        "motivo": "A coleira emitiu 2 alerta(s) nas últimas 24h (tipo: taquicardia)."
-      },
-      {
-        "codigo": "RETORNO_ATRASADO",
-        "pontos": 15,
-        "motivo": "O retorno previsto para 30/10/2026 está atrasado há 3 dias."
-      },
-      {
-        "codigo": "SINTOMAS_RECENTES",
-        "pontos": 10,
-        "motivo": "Sintomas registrados nos últimos 30 dias: cansaço, tosse."
-      },
-      {
-        "codigo": "CONSULTA_PERDIDA",
-        "pontos": 10,
-        "motivo": "O tutor não compareceu à consulta de 30/10/2026."
-      }
-    ],
-    "mensagem_tutor": "Rex tem apresentado taquicardia e cansaço nos últimos dias. É importante que você agende uma consulta para discutirmos esses sintomas e possíveis ações.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
-    "origem_texto": "llm",
-    "gerado_em": "2026-11-02T21:38:10"
+  "notificacoes_tutor": {
+    "Thor": "Tudo está em dia com a saúde do Thor, tutor! Fique tranquilo.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
+    "Mel": "Olá tutor da Mel! O retorno para o dia 13/10/2026 está atrasado há 20 dias. Vamos agendar essa consulta para manter a saúde da sua pequena shih tzu em dia.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
+    "Luna": "Luna tem perdido peso e apresentado apatia e vômitos nos últimos dias. É importante que a gente agende uma consulta para avaliar a sua situação.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
+    "Rex": "Olá tutor do Rex! O seu cachorro teve alguns batimentos cardíacos acima da normalidade nas últimas 24 horas. Para garantir que ele esteja bem, sugiro que agendemos uma avaliação cardiológica.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._"
   },
   "resumo_veterinario_luna": {
     "id_pet": 3,
+    "nome_pet": "Luna",
     "score": 55,
     "nivel": "ALTO",
-    "resumo": "**Perfil**\nLuna, uma gata SRD de porte médio, com 12 anos de idade, apresenta um histórico de doença renal crônica em investigação. O peso da gata diminuiu 12.5% entre os dois últimos prontuários, passando de 4.8 kg para 4.2 kg. O retorno previsto para 23/10/2026 está atrasado há 10 dias.\n\n**O que mudou desde o último atendimento**\nO último prontuário, realizado em 09/10/2026, registrou sintomas de vômito e apatia, com um peso de 4.2 kg e temperatura de 38.3°C. Os exames solicitados foram ureia e creatinina. O retorno estava previsto para 23/10/2026, mas está atrasado.\n\n**Pontos de atenção (motor de regras)**\n- O peso caiu 12.5% desde o último atendimento.\n- O retorno está atrasado há 10 dias.\n- Sintomas recorrentes: vômito e apatia nos últimos 30 dias.\n\n**Tratamentos em curso**\n- Dieta renal.\n- Protetor gástrico conforme receita do veterinário.\n\n**Itens a verificar na consulta**\n- Verificar o estado geral e a apatia da gata.\n- Avaliar a frequência e a natureza dos vômitos.\n- Checar o peso e a temperatura corporal.\n- Verificar a ingestão e a digestão.\n- Avaliar a condicionamento físico.\n- Verificar se há sinais de inchaço ou dor abdominal.\n- Perguntar sobre a ingestão de água e a frequência de urina.\n- Verificar se há mudanças no comportamento ou hábitos alimentares.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
-    "origem_texto": "llm"
+    "resumo": "**Perfil**\nLuna, uma gata SRD de porte médio, com 12 anos, apresenta uma série de preocupações de saúde. O peso da gata diminuiu 12.5% entre os dois últimos prontuários, passando de 4.8 kg para 4.2 kg. Além disso, há um atraso de 10 dias no retorno agendado para 23/10/2026. A gata também apresenta sintomas de apatia e vômito nos últimos 30 dias, com episódios recorrentes de vômito.\n\n**O que mudou desde o último atendimento**\nO peso da Luna diminuiu significativamente, de 4.8 kg para 4.2 kg, e ela apresenta sintomas de apatia e vômito, o que sugere uma possível evolução da doença renal crônica em investigação.\n\n**Pontos de atenção (motor de regras)**\n- Variação significativa no peso.\n- Atraso no retorno agendado.\n- Sintomas de apatia e vômito.\n- Recorrência de vômito.\n\n**Tratamentos em curso**\n- Dieta renal.\n- Protetor gástrico.\n\n**Itens a verificar na consulta**\n- Avaliar a variação de peso e possíveis causas.\n- Verificar a evolução da doença renal crônica.\n- Avaliar a apatia e o vômito.\n- Realizar check-up geriátrico preventivo, incluindo exames de sangue e avaliação geral.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
+    "origem_texto": "llm",
+    "latencia_s": 10.75
   },
   "chat_tutor": [
     {
       "pergunta": "A Mel pode comer petisco hoje? Quando ela precisa voltar ao veterinário?",
       "id_pet": 2,
-      "resposta": "Com base nas informações fornecidas, não há registro de restrições alimentares específicas que impeçam a Mel de comer petisco hoje. No entanto, é sempre bom verificar se a ração para saúde bucal está sendo seguida corretamente.\n\nA próxima consulta ao veterinário está agendada para 13/10/2026, conforme o prontuário. É recomendado que você converse com o veterinário sobre a possibilidade de antecipar a consulta, especialmente se a Mel estiver apresentando algum sintoma ou se você tiver dúvidas sobre a alimentação.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
+      "resposta": "Com base nas informações fornecidas, não há registro de restrições alimentares específicas que impeçam a Mel de comer petisco hoje. No entanto, é sempre bom verificar se a ração para saúde bucal está sendo fornecida conforme indicado.\n\nA respeito do retorno ao veterinário, o próximo agendamento está previsto para 13/10/2026, conforme o check-up geriátrico preventivo sugerido. Recomenda-se que você agende essa consulta para garantir o bem-estar da Mel.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
       "origem_texto": "llm",
       "escalar_para_clinica": false
     },
     {
       "pergunta": "O Thor engoliu chocolate agora há pouco, o que eu faço?",
       "id_pet": 1,
-      "resposta": "⚠️ O que você descreveu pode ser uma **emergência**. Procure atendimento veterinário de urgência agora ou ligue para a clínica. Não dê medicamentos por conta própria.",
       "origem_texto": "regra_emergencia",
-      "escalar_para_clinica": true
+      "escalar_para_clinica": true,
+      "resposta": "⚠️ O que você descreveu pode ser uma **emergência**. Procure atendimento veterinário de urgência agora ou ligue para a clínica. Não dê medicamentos por conta própria."
     }
   ],
-  "notificacoes_gravadas": [
+  "tb_notificacao": [
     {
+      "ID_NOTIFICACAO": 3,
+      "ID_PET": 2,
+      "MENSAGEM": "Olá tutor da Mel! O retorno para o dia 13/10/2026 está atrasado há 20 dias. Vamos agendar essa consulta para manter a saúde da sua pequena shih tzu em dia.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
+      "PRIORIDADE": "MEDIO",
+      "STATUS": "PENDENTE",
+      "CRIADA_EM": "2026-11-02T22:23:42"
+    },
+    {
+      "ID_NOTIFICACAO": 4,
+      "ID_PET": 3,
+      "MENSAGEM": "Luna tem perdido peso e apresentado apatia e vômitos nos últimos dias. É importante que a gente agende uma consulta para avaliar a sua situação.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
+      "PRIORIDADE": "ALTO",
+      "STATUS": "PENDENTE",
+      "CRIADA_EM": "2026-11-02T22:23:43"
+    },
+    {
+      "ID_NOTIFICACAO": 5,
       "ID_PET": 4,
-      "MENSAGEM": "Rex tem apresentado taquicardia e cansaço nos últimos dias. É importante que você agende uma consulta para discutirmos esses sintomas e possíveis ações.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
+      "MENSAGEM": "Olá tutor do Rex! O seu cachorro teve alguns batimentos cardíacos acima da normalidade nas últimas 24 horas. Para garantir que ele esteja bem, sugiro que agendemos uma avaliação cardiológica.\n\n_Apoio informativo gerado por IA. Não substitui a avaliação do veterinário, que confirma diagnósticos e tratamentos._",
       "PRIORIDADE": "CRITICO",
-      "LIDA": false
+      "STATUS": "PENDENTE",
+      "CRIADA_EM": "2026-11-02T22:23:45"
     }
-  ],
-  "testes": "ver seção 7"
+  ]
 }
